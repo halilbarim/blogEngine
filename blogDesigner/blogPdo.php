@@ -10,7 +10,7 @@ function sql($sql,$args = [])
 {
 	try{
 
-		$db = new PDO("mysql:host=localhost;dbname=halilbar_blog","halilbar_admin","27892518888");
+		$db = new PDO("mysql:host=localhost;dbname="database name","username","password");
 		//sorgumuz $query içine $db ile beraber hazırlanıyor
 		$query = $db->prepare($sql);
 		//$query $args ile execute ediliyor
